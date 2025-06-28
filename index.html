@@ -1,0 +1,94 @@
+<!-- file:///C:/Users/daaks/Desktop/Projects/12%20Art%20Comp%20Website/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/svg" href="Assets/fev.svg">
+    <title>Rang De 2.0</title>
+</head>
+
+<body>
+
+    <video autoplay muted id="bg-video">
+    <source src="Assets/vid_2.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+    </video>
+
+    <div class="layer-blur"></div>
+    <div class="container">
+    <div class="scrolling-banner">
+    <div class="scrolling-track">
+        <div class="scrolling-text">
+            <h1>Mega Inter School Drawing Competition</h1>
+        </div>
+        <div class="scrolling-text">
+            <h1>Mega Inter School Drawing Competition</h1>
+        </div>
+        <div class="scrolling-text">
+            <h1>Mega Inter School Drawing Competition</h1>
+        </div>
+    </div>
+    </div>
+
+        <main>
+            <div class="content">
+                <h1 data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0" data-aos-duration="1500">Welcome</h1>
+                <p data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0" data-aos-duration="1500" class="description">
+                    We are thrilled to bring together talented artists from different schools to celebrate creativity 
+                    in a friendly competition. This event provides a platform to showcase your unique vision, 
+                    by the means of painting, drawings or mix-media.
+                </p>
+
+                <div data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0" data-aos-duration="2000" class="btn-container">
+
+                    <a href="#" class="top-btn">Theme</a>
+
+                    <div class="button-grid">
+                        <a href="index.html" class="btn-contact">Reload Page</a>
+                        <a href="#" class="btn-contact">Rules</a>
+                        <a href="mailto:name@email.com" class="btn-contact">Contact Us</a>
+                        <a href="glimpse.html" class="btn-contact">Glimpse of S1</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <spline-viewer data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0" data-aos-duration="2000" class="poster-3d" url="https://prod.spline.design/1YYj9EXOr96SNzrB/scene.splinecode"></spline-viewer>
+    </div>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.98/build/spline-viewer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        // Video pause for last frame
+        const video = document.getElementById('bg-video');
+
+        video.addEventListener('loadedmetadata', () => {
+            video.play();
+        });
+
+        video.addEventListener('ended', () => {
+            video.pause();
+            video.currentTime = video.duration;
+        });
+    </script>
+
+</body>
+</html>
+<!-- d*p. <3 -->
