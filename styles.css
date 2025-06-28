@@ -1,4 +1,4 @@
-/*Main Body*/
+/* Main Body */
 * {
     margin: 0;
     padding: 0;
@@ -81,10 +81,11 @@ main {
     max-width: 35rem;
     color: white;
 }
+
 .btn-container {
-      width: 400px;
-      margin: 0 auto;
-      padding-top: 25px;
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 25px;
 }
 
 .top-btn {
@@ -100,9 +101,11 @@ main {
     margin-bottom: 10px;
     transition: background-color 0.2s ease;
 }
+
 .top-btn:hover {
     background-color: lightgray;
 }
+
 .button-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -147,7 +150,7 @@ main {
     right: 10rem;
 }
 
-
+/* Scrolling Banner */
 .scrolling-banner {
   width: 100%;
   overflow: hidden;
@@ -181,5 +184,27 @@ main {
   100% {
     transform: translateX(0%);
   }
+}
+
+/* Mobile View */
+@media screen and (max-width: 800px) {
+    .container, .scrolling-banner, .content, .poster-image {
+        display: none;
+    }
+
+    .mobile-message {
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        border-radius: 8px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+    }
 }
 /* d*p. <3 */
