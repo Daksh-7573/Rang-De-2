@@ -186,6 +186,10 @@ main {
   }
 }
 
+.mobile-message {
+    display: none;
+}
+
 /* Mobile View */
 @media screen and (max-width: 800px) {
     .container, .scrolling-banner, .content, .poster-image {
