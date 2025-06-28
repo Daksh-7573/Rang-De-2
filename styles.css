@@ -186,10 +186,6 @@ main {
   }
 }
 
-.mobile-message {
-    display: none;
-}
-
 /* Mobile View */
 @media screen and (max-width: 800px) {
     .container, .scrolling-banner, .content, .poster-image {
@@ -210,5 +206,9 @@ main {
         transform: translate(-50%, -50%);
         z-index: 10;
     }
+}
+
+.mobile-message {
+    display: none;
 }
 /* d*p. <3 */
