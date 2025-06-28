@@ -8,13 +8,23 @@
 </head>
 
 <body>
+    <div class="mobile-message">
+        <h1>Please view on larger screen</h1>
+    </div>
+ <div class="text-above">
+        <h1>Best Drawings of Season 1</h1>
+    </div>
+
     <div class="carousel-container">
         <button class="nav left" aria-label="Previous image">&#10094;</button>
-            <div class="carousel">
-            </div>
+        <div class="carousel">
+        </div>
         <button class="nav right" aria-label="Next image">&#10095;</button>
     </div>
 
+    <div class="text-below">
+        <h1>Theme: Save Earth</h1>
+    </div>
 <script>
     const totalImages = 22;
     const carousel = document.querySelector('.carousel');
@@ -24,7 +34,7 @@
     // Load all images initially
     for (let i = 1; i <= totalImages; i++) {
         const img = document.createElement('img');
-        img.src = `Assets/Slide_Show/img_${i}.jpg`;
+        img.src = `Assets/Slide_show/img_${i}.jpg`;
         img.alt = `Image ${i}`;
             if (i === 1) {
                 img.classList.add('main');
