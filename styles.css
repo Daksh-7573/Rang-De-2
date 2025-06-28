@@ -192,7 +192,7 @@ main {
 
 /* Mobile View */
 @media screen and (max-width: 800px) {
-    .container, .scrolling-banner, .content, .poster-image {
+    .container, .scrolling-banner, .content, .poster-image, #bg-video {
         display: none;
     }
 
