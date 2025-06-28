@@ -134,11 +134,17 @@ main {
 }
 
 /* 3D Poster */
-.poster-3d {
-    position: absolute;
-    top: 2%;
-    right: -25%;
-    transform: transformY(30px);
+.poster-image {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 30%;
+    height: auto;
+    object-fit: contain;
+    transform: translateY(-50%);
+    border-radius: 15px;
+    border: 5px solid black;
+    right: 10rem;
 }
 
 
@@ -175,99 +181,5 @@ main {
   100% {
     transform: translateX(0%);
   }
-}
-
-
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        padding: 1rem 2rem;
-        text-align: center;
-        gap: 0.5rem;
-    }
-
-    header h1 {
-        font-size: 2.5rem;
-        margin-bottom: 0.5rem;
-    }
-
-    main {
-        padding: 1rem 2rem;
-        min-height: auto;
-    }
-
-    .content {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 90vw;
-        text-align: center;
-        padding: 0 1rem;
-    }
-
-    .content h1 {
-        font-size: 3rem;
-        line-height: 1.3;
-        margin-bottom: 1rem;
-    }
-
-    .description {
-        max-width: 100%;
-        font-size: 1rem;
-        padding: 1rem;
-    }
-
-    .button-grid {
-        grid-template-columns: 1fr;
-        width: 90vw;
-        margin: 2rem auto 0 auto;
-        justify-items: center;
-        margin-right: 0;
-    }
-
-    .btn-container {
-        width: 90vw;
-        margin: 0 auto;
-        padding-top: 1rem;
-    }
-
-    .top-btn, .btn-contact {
-        width: 100%;
-        max-width: 350px;
-        padding: 1rem;
-        font-size: 1.1rem;
-    }
-
-    .poster-3d {
-        position: static;
-        transform: none;
-        margin: 2rem auto 0 auto;
-        max-width: 80vw;
-        width: 300px;
-    }
-
-    .scrolling-text {
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 480px) {
-    .content h1 {
-        font-size: 2rem;
-    }
-
-    .description {
-        font-size: 0.95rem;
-    }
-
-    .top-btn,
-    .btn-contact {
-        font-size: 1rem;
-        padding: 0.75rem 1rem;
-    }
-
-    .scrolling-text {
-        font-size: 14px;
-    }
 }
 /* d*p. <3 */
