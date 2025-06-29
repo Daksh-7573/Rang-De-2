@@ -179,18 +179,14 @@ main {
 
 @keyframes scroll-right-loop {
   0% {
-    transform: translateX(-50%);
+    transform: translateX(50%);
   }
   100% {
-    transform: translateX(0%);
+    transform: translateX(-100%);
   }
 }
 
-.mobile-message {
-    display: none;
-}
-
-@media (max-width: 800px) {
+@media (max-width: 700px) {
     body > *:not(.mobile-message) {
         display: none;
     }
@@ -207,6 +203,12 @@ main {
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 15px;
+    }
+}
+
+@media (min-width: 700px) {
+    .mobile-message {
+        display: none;
     }
 }
 /* d*p. <3 */
