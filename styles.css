@@ -91,9 +91,8 @@ main {
 .top-btn {
     display: block;
     text-align: center;
-    padding: 1rem 1rem;
+    padding: 1rem 1.5rem;
     font-size: 2.25rem;
-    letter-spacing: 20px;
     font-weight: 750;
     color: black;
     background-color: white;
